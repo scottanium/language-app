@@ -39,6 +39,27 @@ body {
     var(--bg);
 }
 
+.hidden { display: none !important; }
+
+.staging-banner {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  margin: 0 auto 8px;
+  max-width: 430px;
+  padding: 6px 12px;
+  background: #e7c56b;
+  color: #2a1f18;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+body.is-staging #app {
+  padding-top: 0;
+}
+
 #app {
   max-width: 430px;
   margin: 0 auto;
